@@ -110,7 +110,20 @@
 <!--            <version>0.15</version>-->
 <!--        </dependency>-->
 
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230618</version>
+        </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.15.2</version>
+        </dependency>
 
 
         <!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
@@ -207,8 +220,27 @@
             <version>5.0.3</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>ch.obermuhlner</groupId>
+            <artifactId>java-scriptengine</artifactId>
+            <version>1.0.1</version>
+        </dependency>
 
-<!--        <dependency>-->
+        <!-- https://mvnrepository.com/artifact/net.solarnetwork.common/nifty-modbus-rtu -->
+        <dependency>
+            <groupId>net.solarnetwork.common</groupId>
+            <artifactId>nifty-modbus-rtu</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.solarnetwork.common/nifty-modbus-rtu-jsc -->
+        <dependency>
+            <groupId>net.solarnetwork.common</groupId>
+            <artifactId>nifty-modbus-rtu-jsc</artifactId>
+            <version>0.4.0</version>
+        </dependency>
+
+        <!--        <dependency>-->
 <!--            <groupId>uz.maniac4j</groupId>-->
 <!--            <artifactId>storm</artifactId>-->
 <!--            <scope>system</scope>-->

@@ -1,5 +1,9 @@
 package uz.maniac4j.storm.ModbusRTU;
 
+import net.solarnetwork.io.modbus.rtu.jsc.JscSerialPortProvider;
+import net.solarnetwork.io.modbus.rtu.netty.NettyRtuModbusClientConfig;
+import net.solarnetwork.io.modbus.rtu.netty.RtuModbusMessage;
+import net.solarnetwork.io.modbus.rtu.netty.RtuNettyModbusClient;
 import uz.maniac4j.storm.modbus.client.ModbusClient;
 
 import java.io.IOException;
@@ -11,6 +15,16 @@ public class ModbusRTU {
     public static void main(String[] args) throws IOException {
         boolean success = false;
         ModbusClient modbusClient = new ModbusClient();
+
+
+
+//        NettyRtuModbusClientConfig config=new NettyRtuModbusClientConfig();
+//
+//        JscSerialPortProvider serialPortProvider=new JscSerialPortProvider();
+//
+//        RtuNettyModbusClient rtuClient=new RtuNettyModbusClient(config,serialPortProvider);
+
+
 
         while(!success) {
             try {

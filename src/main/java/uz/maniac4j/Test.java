@@ -6,6 +6,7 @@ import uz.maniac4j.storm.modbus.exceptions.ModbusStormException;
 import uz.maniac4j.storm.modbus.server.ModbusServer;
 
 import java.util.Arrays;
+import java.util.Random;
 
 
 public class Test {
@@ -48,15 +49,24 @@ public class Test {
 
 
 //            while (true){
-                String[] array = {"Rep-TT-001", "142-P-9518953", "159-P-9303983", "151-P-9303975", "85-P-9303928", "156-P-9303927", "Rep-P-9303835", "Rep-P-9303689", "BVN-P-9303677", "4K-P-9301307", "2oc-P-0215136","127-PT-0627923","138-PT-8874679"};
-                int temp=1;
-                for (String s : array) {
-                    for (int i = 0; i < 4; i++) {
-                        modbusServer.inputRegisters[temp]=16710;
-                        modbusServer.inputRegisters[temp+1]=26214;
-                        temp+=2;
-                    }
-                }
+//                String[] array = {"Rep-TT-001", "142-P-9518953", "159-P-9303983", "151-P-9303975", "85-P-9303928", "156-P-9303927", "Rep-P-9303835", "Rep-P-9303689", "BVN-P-9303677", "4K-P-9301307", "2oc-P-0215136","127-PT-0627923","138-PT-8874679"};
+//                int temp=1;
+//                for (String s : array) {
+//                    for (int i = 0; i < 4; i++) {
+//                        modbusServer.inputRegisters[temp]=16710;
+//                        modbusServer.inputRegisters[temp+1]=26214;
+//                        temp+=2;
+//                    }
+//                }
+//
+//                while (true){
+//                    Random random=new Random(1000);
+//                    int i = random.nextInt();
+//                    int i2 = random.nextInt();
+//                    modbusServer.inputRegisters[10]=i;
+//                    modbusServer.inputRegisters[11]=i2;
+//                    Thread.sleep(1000);
+//                }
 //            }
 
 //            ModbusClient client=new ModbusClient("10.10.24.52",502);
